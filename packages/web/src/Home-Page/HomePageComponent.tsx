@@ -10,15 +10,15 @@ export default function HomePageComponent() {
         className="min-h-[90vh] pt-5 bg-no-repeat bg-center bg-cover flex justify-center"
         style={{ backgroundImage: `url(${siteConfig.images.homebg})` }}
       >
-        <div className="xl:w-[1200px]  mx-5 lg:m-0  flex flex-col gap-14">
-          <div className="text-3xl lg:text-5xl text-white font-semibold text-center mt-[100px] grid gap-10 ">
+        <div className="xl:w-[1200px]  mx-5 lg:m-0  flex flex-col gap-10 lg:gap-14">
+          <div className="text-2xl lg:text-5xl inline text-white font-semibold text-center mt-[100px] lg:grid gap-10 ">
             <h1>
               The <span className="text-primary">Trusted Companion</span> for
             </h1>
-            <h1>Expanding Travel Agencies & Tour Operators</h1>
+            <h1 className="">Expanding Travel Agencies & Tour Operators</h1>
           </div>
 
-          <div className="text-3xl text-white text-center leading-[60px]">
+          <div className="text-xl lg:text-3xl text-white text-center leading-[40px] lg:leading-[60px]">
             <p>
               <span className="text-primary">Inspiring Travel Adventures</span>{" "}
               and <span className="text-primary">Success Stories</span> Since
