@@ -8,7 +8,7 @@ export default function Navbar() {
       <h1 className="text-3xl z-50">
         <Link href="/">BhutanUpwardTravels</Link>
       </h1>
-      <ul className="flex gap-7 text-base font-semibold z-50 ">
+      <ul className="hidden lg:flex gap-7 text-base font-semibold z-50 ">
         {siteConfig.getHeaderLinks().map((item, index) => (
           <li key={index} className="hover:text-primary ease-in transition-all">
             <Link href={item.href ?? ""}>{item.title}</Link>
