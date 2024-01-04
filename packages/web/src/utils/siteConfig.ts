@@ -30,6 +30,8 @@ export const siteConfig = {
   images: {
     homebg:
       "https://framerusercontent.com/images/3hiBbgyX1cjx1RlBiJym2iLCo.png",
+    aboutuspic:
+      "https://images.followalice.com/LYMth03VDX1xjGGrW9WG0/407a868f99d578f7585b8f38ff7d6c33/Ours._S._Buddha_dordenma_statue_with_monks_and_tourists_in_Thimphu__Bhutan.jpg?q=80&fit=fill&f=center&w=1200&h=1200",
   },
 
   imageGroupOne: () => {

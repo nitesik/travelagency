@@ -1,4 +1,4 @@
-import { CustomButton } from "@/components";
+import { CustomButton, PricingComponent } from "@/components";
 import { siteConfig } from "@/utils/siteConfig";
 import icons from "@/utils/icons";
 import Image from "next/image";
@@ -22,7 +22,7 @@ export default function HomePageComponent() {
             <p>
               <span className="text-primary">Inspiring Travel Adventures</span>{" "}
               and <span className="text-primary">Success Stories</span> Since
-              20XX Exclusively Partnering with a Handpicked Group of{" "}
+              2012 Exclusively Partnering with a Handpicked Group of{" "}
               <span className="text-primary">5 Clients at a Time</span>
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function HomePageComponent() {
               </h3>
               <p className="font-semibold">
                 Unlock Your Complimentary 3-Day Trial and Request Unlimited
-                Travel Designs. No Credit Card Needed to Begin.
+                Travels. No Credit Card Needed to Begin.
               </p>
             </div>
             <div className="w-[70%] lg:w-[30%] text-center flex items-center flex-col gap-3">
@@ -220,15 +220,15 @@ export default function HomePageComponent() {
         <div className="xl:w-[1200px]  mx-5 lg:m-0  bg-tertiary flex flex-col items-center h-fit py-10 px-12 rounded-xl text-center leading-[40px] gap-5 text-xl font-medium ">
           <Image src={icons.quotationIcon} alt="icon" width={34} height={34} />
           <p>
-            BhutanUpwardTravels stands out as the top-notch design team
-            I&apos;ve collaborated with. Their strategy in crafting designs that
-            enhance engagement, coupled with a keen eye for the latest trends in
-            travel aesthetics, truly distinguishes them. They don&apos;t merely
-            adhere to specifications; instead, they exceed expectations by
-            infusing innovation and expertise into each project. Collaborating
-            with them reveals that they are more than designers - they are
-            visionary contributors to the travel industry and absolute stars in
-            their craft.
+            BhutanUpwardTravels stands out as the top-notch tour team I&apos;ve
+            collaborated with. Their strategy in crafting designs that enhance
+            engagement, coupled with a keen eye for the latest trends in travel
+            aesthetics, truly distinguishes them. They don&apos;t merely adhere
+            to specifications; instead, they exceed expectations by infusing
+            innovation and expertise into each tour. Collaborating with them
+            reveals that they are more than tour teams - they are visionary
+            contributors to the travel industry and absolute stars in their
+            craft.
           </p>
           <div>
             <h2 className="font-bold">- Manish Giri</h2>
@@ -247,6 +247,72 @@ export default function HomePageComponent() {
             </p>
           </div>
           <CustomButton>Book a call</CustomButton>
+        </div>
+      </div>
+
+      <PricingComponent />
+
+      <div className="flex justify-center my-[75px]">
+        <div className="lg:w-[1200px] mx-5 lg:m-0 ">
+          <h1 className="text-4xl font-bold border-b border-black pb-3">
+            About Us
+          </h1>
+          <div className="flex mt-10 gap-10 flex-col-reverse lg:flex-row">
+            <div className="flex-1">
+              <div className="flex flex-col gap-2 text-lg font-semibold">
+                <span>
+                  Bhutan Upward Travels is a new company established in 2012
+                  with an aim to do business in the right way. We want to deal
+                  honestly with our guests and government.
+                </span>
+                <span>
+                  We want to give full value for their money to our guests. Each
+                  guest is unique and we want to serve our guests uniquely even
+                  in a group. Please inform us about your specific needs. We
+                  want our guests to come back again to Bhutan through us.
+                </span>
+                <span>
+                  For this to happen, our guests would have to be at least
+                  delighted by our services. We would like to give you an
+                  authentic Bhutanese experience in Bhutan.
+                </span>
+                <span className="mt-5">
+                  This would among others include:
+                  <ol className="mt-3 text-base font-medium">
+                    <div className="grid gap-4 ml-7 list-decimal">
+                      <li>
+                        Joining a Bhutanese community in their regular
+                        activities; like paddy transplanting, apple and orange
+                        plucking, paddy harvesting, etc.
+                      </li>
+                      <li>
+                        Joining a nomadic family as they take care of their yaks
+                        in the hills.
+                      </li>
+                      <li>Living in a farm house with very basic amenities.</li>
+                      <li>
+                        Joining the Bhutanese in their social activities like
+                        festivals, archery and other nature treks like bird
+                        watching.
+                      </li>
+                      <li>Short day hikes</li>
+                      <li>Cultural tour (Both by car and/or on foot).</li>
+                      <li>Bike tours</li>
+                      <li>Rafting</li>
+                    </div>
+                  </ol>
+                </span>
+              </div>
+            </div>
+            <div className="lg:w-[400px] flex lg:inline justify-center">
+              <div
+                className="w-[80%] lg:w-full h-[500px] bg-center bg-cover rounded-3xl sticky top-[6rem]"
+                style={{
+                  backgroundImage: `url(${siteConfig.images.aboutuspic})`,
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </main>

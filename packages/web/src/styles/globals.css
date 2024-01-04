@@ -11,3 +11,11 @@ html {
   scroll-behavior: smooth;
   scroll-margin-block: end;
 }
+
+button {
+  transition: all ease-in-out 100ms;
+}
+
+button:hover {
+  scale: 1.05;
+}
