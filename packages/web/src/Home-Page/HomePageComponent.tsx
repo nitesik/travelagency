@@ -306,7 +306,7 @@ export default function HomePageComponent() {
             </div>
             <div className="lg:w-[400px] flex lg:inline justify-center">
               <div
-                className="w-[80%] lg:w-full h-[500px] bg-center bg-cover rounded-3xl sticky top-[6rem]"
+                className="w-[90%] lg:w-full h-[500px] bg-center bg-cover rounded-3xl sticky top-[6rem]"
                 style={{
                   backgroundImage: `url(${siteConfig.images.aboutuspic})`,
                 }}

@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function PricingComponent() {
   return (
-    <div className="flex flex-col gap-10 items-center my-10 font-medium">
-      <div className="xl:w-[1200px]">
+    <div className="flex flex-col px-5 lg:p-0 gap-10 items-center my-10 font-medium">
+      <div className="lg:w-[1200px]  ">
         <div className="text-center w-full">
           <h1 className="text-5xl font-bold">Pricing</h1>
           <h1 className="text-3xl font-bold mt-7">Inbound</h1>
@@ -13,7 +13,7 @@ export default function PricingComponent() {
           <div className="flex flex-col gap-3">
             <h2 className="text-2xl font-bold">Premium</h2>
             <p>Great way to taste the Place with one-time tour.</p>
-            <h1 className="my-3 text-4xl font-bold">$1000/day</h1>
+            <h1 className="my-3 text-3xl lg:text-4xl font-bold">$1000/day</h1>
             <div>
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
@@ -52,7 +52,7 @@ export default function PricingComponent() {
               </p>
             </div>
             <p>Great way to taste the Place with one-time tour.</p>
-            <h1 className="my-3 text-4xl font-bold">$350/day</h1>
+            <h1 className="my-3 text-3xl lg:text-4xl font-bold">$350/day</h1>
             <div>
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
@@ -86,7 +86,7 @@ export default function PricingComponent() {
           <div className="flex flex-col gap-3">
             <h2 className="text-2xl font-bold">Budget</h2>
             <p>Great way to taste the Place with one-time tour.</p>
-            <h1 className="my-3 text-4xl font-bold">$200/day</h1>
+            <h1 className="my-3 text-3xl lg:text-4xl font-bold">$200/day</h1>
             <div>
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
@@ -119,7 +119,7 @@ export default function PricingComponent() {
           </div>
         </div>
       </div>
-      <div className="lg:w-[1200px]">
+      <div className="w-full lg:w-[1200px] mx-10 lg:m-0">
         <div className="text-center w-full">
           <h1 className="text-3xl font-bold mt-7">Outbound</h1>
         </div>
@@ -127,7 +127,9 @@ export default function PricingComponent() {
           <div className="flex flex-col gap-3">
             <h2 className="text-2xl font-bold">Premium</h2>
             <p>Great way to taste the Place with one-time tour.</p>
-            <h1 className="my-3 text-4xl font-bold">Nu.35,000/month</h1>
+            <h1 className="my-3 text-3xl lg:text-4xl font-bold">
+              Nu.35,000/week
+            </h1>
             <div>
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
@@ -166,7 +168,9 @@ export default function PricingComponent() {
               </p>
             </div>
             <p>Great way to taste the Place with one-time tour.</p>
-            <h1 className="my-3 text-4xl font-bold">Nu.15,000/week</h1>
+            <h1 className="my-3 text-3xl lg:text-4xl font-bold">
+              Nu.15,000/week
+            </h1>
             <div>
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
@@ -200,7 +204,9 @@ export default function PricingComponent() {
           <div className="flex flex-col gap-3">
             <h2 className="text-2xl font-bold">Budget</h2>
             <p>Great way to taste the Place with one-time tour.</p>
-            <h1 className="my-3 text-4xl font-bold">Nu.10,000/week</h1>
+            <h1 className="my-3 text-3xl lg:text-4xl font-bold">
+              Nu.10,000/week
+            </h1>
             <div>
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
