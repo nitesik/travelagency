@@ -1,10 +1,11 @@
 import icons from "@/utils/icons";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PricingComponent() {
   return (
-    <div className="flex flex-col px-5 lg:p-0 gap-10 items-center my-10 font-medium">
-      <div className="lg:w-[1200px]  ">
+    <div className="flex flex-col px-5 lg:p-0 lg:px-10 xl:px-0 gap-10 items-center my-10 font-medium">
+      <div className="xl:w-[1200px] lg:w-full  ">
         <div className="text-center w-full">
           <h1 className="text-5xl font-bold">Pricing</h1>
           <h1 className="text-3xl font-bold mt-7">Inbound</h1>
@@ -18,9 +19,11 @@ export default function PricingComponent() {
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
             </div>
-            <button className="w-full bg-primary py-4 font-bold rounded-full">
-              Choose this
-            </button>
+            <Link href="/registration/inbound?level=2">
+              <button className="w-full bg-primary py-4 font-bold rounded-full">
+                Choose this
+              </button>
+            </Link>
             <div className="mt-5 grid gap-3">
               <span className="flex gap-3">
                 <Image src={icons.tickIcon} alt="tick" width={17} height={17} />
@@ -57,9 +60,11 @@ export default function PricingComponent() {
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
             </div>
-            <button className="w-full bg-primary py-4 font-bold rounded-full">
-              Choose this
-            </button>
+            <Link href="/registration/inbound?level=1">
+              <button className="w-full bg-primary py-4 font-bold rounded-full">
+                Choose this
+              </button>
+            </Link>
             <div className="mt-5 grid gap-3">
               <span className="flex gap-3">
                 <Image src={icons.tickIcon} alt="tick" width={17} height={17} />
@@ -91,9 +96,11 @@ export default function PricingComponent() {
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
             </div>
-            <button className="w-full bg-primary py-4 font-bold rounded-full">
-              Choose this
-            </button>
+            <Link href="/registration/inbound?level=0">
+              <button className="w-full bg-primary py-4 font-bold rounded-full">
+                Choose this
+              </button>
+            </Link>
             <div className="mt-5 grid gap-3">
               <span className="flex gap-3">
                 <Image src={icons.tickIcon} alt="tick" width={17} height={17} />
@@ -119,7 +126,8 @@ export default function PricingComponent() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-[1200px] mx-10 lg:m-0">
+
+      <div className="w-full xl:w-[1200px] lg:w-full mx-10 lg:m-0">
         <div className="text-center w-full">
           <h1 className="text-3xl font-bold mt-7">Outbound</h1>
         </div>
@@ -134,9 +142,11 @@ export default function PricingComponent() {
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
             </div>
-            <button className="w-full bg-primary py-4 font-bold rounded-full">
-              Choose this
-            </button>
+            <Link href="/registration/inbound">
+              <button className="w-full bg-primary py-4 font-bold rounded-full">
+                Choose this
+              </button>
+            </Link>
             <div className="mt-5 grid gap-3">
               <span className="flex gap-3">
                 <Image src={icons.tickIcon} alt="tick" width={17} height={17} />
@@ -175,9 +185,11 @@ export default function PricingComponent() {
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
             </div>
-            <button className="w-full bg-primary py-4 font-bold rounded-full">
-              Choose this
-            </button>
+            <Link href="/registration/inbound">
+              <button className="w-full bg-primary py-4 font-bold rounded-full">
+                Choose this
+              </button>
+            </Link>
             <div className="mt-5 grid gap-3">
               <span className="flex gap-3">
                 <Image src={icons.tickIcon} alt="tick" width={17} height={17} />
@@ -211,9 +223,11 @@ export default function PricingComponent() {
               <p>Per day payment.</p>
               <p>FREE 3-day trial. No credit card required.</p>
             </div>
-            <button className="w-full bg-primary py-4 font-bold rounded-full">
-              Choose this
-            </button>
+            <Link href="/registration/inbound">
+              <button className="w-full bg-primary py-4 font-bold rounded-full">
+                Choose this
+              </button>
+            </Link>
             <div className="mt-5 grid gap-3">
               <span className="flex gap-3">
                 <Image src={icons.tickIcon} alt="tick" width={17} height={17} />

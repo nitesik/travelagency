@@ -2,12 +2,17 @@ import { CustomButton, PricingComponent } from "@/components";
 import { siteConfig } from "@/utils/siteConfig";
 import icons from "@/utils/icons";
 import Image from "next/image";
+import { useMeQueryQuery } from "@/generated/graphql";
 
 export default function HomePageComponent() {
+  const { data, loading, error } = useMeQueryQuery();
+
+  console.log(data?.MeQuery.message);
+
   return (
     <main className="min-h-screen">
       <div
-        className="min-h-[90vh] pt-5 bg-no-repeat bg-center bg-cover flex justify-center"
+        className="min-h-[90vh] pt-5 bg-no-repeat bg-center bg-cover flex justify-center lg:px-10 xl:px-0"
         style={{ backgroundImage: `url(${siteConfig.images.homebg})` }}
       >
         <div className="xl:w-[1200px]  mx-5 lg:m-0  flex flex-col gap-10 lg:gap-14">
@@ -48,7 +53,7 @@ export default function HomePageComponent() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-[60px]">
+      <div className="flex justify-center mt-[60px] lg:px-10 xl:px-0">
         <div className="xl:w-[1200px]  mx-5 lg:m-0 ">
           <div className="text-center">
             <h1 className="text-4xl font-bold">How This Agency Works</h1>
@@ -99,7 +104,7 @@ export default function HomePageComponent() {
         </div>
       </div>
 
-      <div className="flex justify-center my-[75px]">
+      <div className="flex justify-center my-[75px] lg:px-10 xl:px-0">
         <div className="xl:w-[1200px]  mx-5 lg:m-0  bg-secondary h-fit py-10 px-12 text-center leading-[40px] gap-5 text-xl text-white font-medium rounded-xl flex flex-col items-center">
           <Image
             src={icons.quotationIcon}
@@ -123,7 +128,7 @@ export default function HomePageComponent() {
         </div>
       </div>
 
-      <div className="flex justify-center" id="benefits">
+      <div className="flex justify-center lg:px-10 xl:px-0" id="benefits">
         <div className="xl:w-[1200px]  mx-5 lg:m-0 ">
           <div className="text-center flex flex-col gap-5 items-center">
             <h1 className="text-4xl font-bold">Partnership Benefits</h1>
@@ -216,7 +221,7 @@ export default function HomePageComponent() {
         </div>
       </div>
 
-      <div className="flex justify-center my-[50px]">
+      <div className="flex justify-center my-[50px] lg:px-10 xl:px-0">
         <div className="xl:w-[1200px]  mx-5 lg:m-0  bg-tertiary flex flex-col items-center h-fit py-10 px-12 rounded-xl text-center leading-[40px] gap-5 text-xl font-medium ">
           <Image src={icons.quotationIcon} alt="icon" width={34} height={34} />
           <p>
@@ -237,7 +242,7 @@ export default function HomePageComponent() {
         </div>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center lg:px-10 xl:px-0">
         <div className="xl:w-[1200px]  mx-5 lg:m-0  flex border items-center lg:flex-row flex-col lg:text-start text-center gap-10 border-[#E5E5E5] p-10 rounded-3xl">
           <div className="flex-1 flex flex-col justify-between gap-7 lg:gap-0">
             <h1 className="font-bold text-3xl">Not sure if this is for you?</h1>
@@ -252,8 +257,8 @@ export default function HomePageComponent() {
 
       <PricingComponent />
 
-      <div className="flex justify-center my-[75px]">
-        <div className="lg:w-[1200px] mx-5 lg:m-0 ">
+      <div className="flex justify-center my-[75px] lg:px-10 xl:px-0">
+        <div className="xl:w-[1200px] mx-5 lg:m-0 ">
           <h1 className="text-4xl font-bold border-b border-black pb-3">
             About Us
           </h1>

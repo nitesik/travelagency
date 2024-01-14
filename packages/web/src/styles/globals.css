@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  transition: all 200ms ease-in-out;
+}
+
 body {
   font-family: "Manrope", sans-serif;
 }
@@ -16,6 +20,19 @@ button {
   transition: all ease-in-out 100ms;
 }
 
-button:hover {
+/* button:hover {
   scale: 1.05;
+} */
+
+option {
+  min-height: 1.5rem !important;
+  padding: 14px !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
